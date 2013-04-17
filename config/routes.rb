@@ -1,4 +1,15 @@
 Alift::Application.routes.draw do
+  
+get "pages/index"
+get "pages/blog_main"
+get "pages/blog_single"
+get "pages/contact"
+get "pages/full_width"
+get "pages/portfolio"
+get "pages/two_column"
+
+root :to => 'pages#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
