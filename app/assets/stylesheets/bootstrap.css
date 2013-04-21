@@ -1012,9 +1012,9 @@ legend small {
 	color: #999999;
 }
 label, input, button, select, textarea {
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: normal;
-	line-height: 20px;
+	line-height: 30px;
 }
 input, button, select, textarea {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1022,18 +1022,21 @@ input, button, select, textarea {
 label {
 	display: block;
 	margin-bottom: 5px;
+	text-align: left;
+	padding-left: 290px;
 }
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-	display: inline-block;
-	height: 20px;
-	padding: 7px 6px;
-	margin-bottom: 9px;
-	font-size: 14px;
-	line-height: 20px;
-	color: #555555;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	padding-right: 140px;
+	padding-right: 4px \9;
+	padding-left: 14px;
+	padding-left: 4px \9;
+	text-align: left;
+	/* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 input, textarea, .uneditable-input {
 	width: 206px;
@@ -1564,7 +1567,7 @@ legend + .control-group {
 	padding: 7px 14px;
 	margin-bottom: 0;
 	font-size: 13px;
-	line-height: 20px;
+    line-height: 18px;
  *line-height: 20px;
 	text-align: center;
 	vertical-align: middle;

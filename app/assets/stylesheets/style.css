@@ -142,9 +142,7 @@ outline:none;
 .nav-collapse a {
 	font-weight:normal !important;
 }
-.navbar .btn {
-	background:#02487b !important;
-}
+
 .navbar .active a {
 	background:#02487b !important;
 }
@@ -706,7 +704,9 @@ footer a:hover {
   font-size: 1.7em;
   color: #0077be;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 13px;
+  padding-botom: 13px;
+  padding-left: 20px;
   font-weight: bold;
   line-height: 1;
 }
@@ -716,14 +716,20 @@ footer a:hover {
   text-decoration: none;
 }
 
-h22 {
-	font-size: 30px;
-	line-height: 40px;
-	margin: 10px;
-	color: #00000;
-	text-align: center;
-	-webkit-margin-before: 0.83em;
-	-webkit-margin-after: 0.83em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
+.formself {
+  padding-right: 14px;
+	padding-right: 4px \9;
+	padding-left: 14px;
+	padding-left: 4px \9;
+	/* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+div.actions {
+  margin-bottom: 10px;
+  margin-top: 15px;
 }

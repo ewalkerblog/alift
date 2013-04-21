@@ -1,5 +1,7 @@
 Alift::Application.routes.draw do
   
+  resources :posts
+
 get "pages/index"
 get "pages/blog_main"
 get "pages/blog_single"
