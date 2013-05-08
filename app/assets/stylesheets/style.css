@@ -712,7 +712,8 @@ footer a:hover {
 }
 
 #logo:hover {
-  color: #000000;
+  color: #0077be;
+  background: transparent;
   text-decoration: none;
 }
 
