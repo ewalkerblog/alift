@@ -11,6 +11,7 @@ get "pages/portfolio"
 get "pages/two_column"
 
 root :to => 'pages#index'
+match '/newride', to: 'posts#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

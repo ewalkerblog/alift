@@ -1720,28 +1720,25 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 	background-color: #003399 \9;
 }
 .btn-warning {
-	color: #329ee0;
-	margin: 10px 0px;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #aee6fb;
-	background-image: -moz-linear-gradient(top, #aee6fb, #9fd8f0);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#aee6fb), to(#9fd8f0));
-	background-image: -webkit-linear-gradient(top, #aee6fb, #9fd8f0);
-	background-image: -o-linear-gradient(top, #aee6fb, #9fd8f0);
-	background-image: linear-gradient(to bottom, #aee6fb, #9fd8f0);
-	background-repeat: repeat-x;
- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
-	border-color: #aee6fb #aee6fb #9fd8f0;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
- *background-color: #aee6fb;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #faa732;
+   *background-color: #f89406;
+    background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+    background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+    background-image: -o-linear-gradient(top, #fbb450, #f89406);
+    background-image: linear-gradient(to bottom, #fbb450, #f89406);
+    background-repeat: repeat-x;
+    border-color: #f89406 #f89406 #ad6704;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
-	color: #329ee0;
-	background-color: #9fd8f0;
- *background-color: #9fd8f0;
+	color: #ffffff;
+    background-color: #f89406;
+   *background-color: #df8505;
 }
 .btn-warning:active, .btn-warning.active {
 	background-color: #c67605 \9;
