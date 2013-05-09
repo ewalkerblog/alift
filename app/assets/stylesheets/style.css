@@ -16,7 +16,7 @@ h1 b, h2 b, h3 b, h4 b {
 	font-weight:normal;
 }
 .padd {
-	padding:10px;
+	padding:20px;
 }
 .social img {
 	margin-right:5px;
@@ -731,18 +731,20 @@ footer a:hover {
 }
 
 div.actions {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   margin-top: 15px;
 }
 
 /* Btn */
 
-.navbar .nav > li > a.btn.btn-success {
-margin-top:10px;
-padding: 4px 12px;
+.navbar .nav > li > a.btn.btn-warning {
+display: inline-block;
+margin-top:8px;
+margin-right:15px;
+padding: 7px 14px;
 margin-bottom: 0;
-font-size: 14px;
-line-height: 23px;
+font-size: 17px;
+line-height: 18px;
 text-align: center;
 vertical-align: middle;
 cursor: pointer;
