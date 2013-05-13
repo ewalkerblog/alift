@@ -484,7 +484,7 @@ cite {
 	color: #468847;
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0px 0;
+	margin: 10px 0;
 	font-family: inherit;
 	font-weight: bold;
 	line-height: 1;
@@ -989,7 +989,7 @@ table [class*=span], .row-fluid table [class*=span] {
 	background-color: #c4e3f3;
 }
 form {
-	margin: 0 0 0px;
+	margin: 0 0 20px;
 }
 fieldset {
 	padding: 0;
@@ -1017,7 +1017,7 @@ label, input, button, select, textarea {
 	line-height: 30px;
 }
 input, button, select, textarea {
-	font-family: 'Jockey One', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
 	display: block;
@@ -1566,7 +1566,7 @@ legend + .control-group {
   *zoom: 1;
 	padding: 7px 14px;
 	margin-bottom: 0;
-	font-size: 17px;
+	font-size: 13px;
     line-height: 18px;
  *line-height: 20px;
 	text-align: center;
