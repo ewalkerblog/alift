@@ -1,4 +1,6 @@
 Alift::Application.configure do
+
+  
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -34,4 +36,6 @@ Alift::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  ENV['FACEBOOK_APP_ID'] = "614933635198146";
+  ENV['FACEBOOK_SECRET'] = "261517503690090a9d591ce61a5908cd";
 end

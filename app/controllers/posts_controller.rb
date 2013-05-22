@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  
+  
   def index
     @posts = Post.all
 
@@ -80,4 +82,5 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
 end
