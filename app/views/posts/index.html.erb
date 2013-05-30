@@ -1,27 +1,51 @@
-<h1>Listing posts</h1>
+<div class="homesearch">
+<div class="container">
+<h2>Search results</h2>
+</div>
+</div>
 
-<table>
-  <tr>
-    <th>From</th>
-    <th>To</th>
-    <th>Date</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="lists">
 
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.from %></td>
-    <td><%= post.to %></td>
-    <td><%= post.date %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
-<br />
+<ol class="limeposts">
 
-<%= link_to 'New Post', new_post_path %>
+
+
+ <% @posts.each do |post| %>
+  <li>
+  <div class="limeskin">
+  <div class="limebox">
+  <div class="limecost">
+  <p>R120 </p> 
+  <p>2</p> 
+  </div>
+  <div class="limeface">
+  <p>Erin Walker </p>
+  </div>
+  <div class="limecontent">
+    From:
+    <%= post.from %>
+    To:
+    <%= post.to %>
+    <p>Date:</p>
+    <p><%= post.date %></p>
+  </div>
+  
+  </div>
+  </div>
+  </li>
+ <% end %>
+ 
+
+
+
+
+</ol>
+
+</div>
+
+
+
+
+
+

@@ -2,6 +2,9 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   
+  before_filter :get_session_user
+
+ 
   
   def index
     @posts = Post.all
@@ -81,6 +84,14 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url }
       format.json { head :no_content }
     end
+  end
+  
+   private 
+
+  def get_session_user
+    redirect_to root_url unless @user ||= 
+      session[:user_id] &&
+      User.find_by_id(session[:user_id])
   end
   
 end
