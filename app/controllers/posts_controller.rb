@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   
-  before_filter :get_session_user
+  before_filter :get_session_user, :except => [:index, :new]
 
  
   
