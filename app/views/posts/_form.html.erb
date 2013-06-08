@@ -11,6 +11,11 @@
     </div>
   <% end %>
 
+  
+  <div class="field">
+    <%= f.label :name %>
+    
+  </div>
   <div class="field">
     <%= f.label :from %>
     <%= f.text_field :from, :class => 'address-picker-input' %>
@@ -23,7 +28,18 @@
     <%= f.label :date %>
     <%= f.text_field :date, :class=> "field shorter"  %>
   </div>
-  
+  <div class="field">
+    <%= f.label :price %>
+    R<%= f.number_field :price, :min=>"0", :class=> "field shorter" %>
+  </div>
+  <div class="field">
+    <%= f.label :seat, "Seats Available" %>
+    <%= f.select :seat, Post::NUMBER_OF_SEATS %>
+  </div>
+  <div class="field">
+   <%= f.label :bagroom %>
+   <%= f.select :bagroom, Post::BAG_ROOM %>
+  </div>
   <!-- ============================================================================ -->
 
     <script type="text/javascript">

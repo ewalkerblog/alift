@@ -16,11 +16,11 @@
   <div class="limeskin">
   <div class="limebox">
   <div class="limecost">
-  <p>R120 </p> 
-  <p>2</p> 
+  <p><%= number_to_currency(post.price, :unit => "R") %> </p> 
+  <p><%= post.seat %> </p> 
   </div>
   <div class="limeface">
-  <p>Erin Walker </p>
+  <%=post.user.name%>
   </div>
   <div class="limecontent">
     From:
