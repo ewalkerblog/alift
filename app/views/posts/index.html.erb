@@ -1,5 +1,17 @@
+
+
+
 <div class="homesearch">
 <div class="container">
+
+<h2>Type in any location to see what rides are available:</h2>
+<%= search_form_for @q do |f| %>
+  <div class="field">
+    <%= f.text_field :from_cont %>
+  </div>
+  <%= f.submit "Search", class:"btn btn-warning" %>
+<% end %>
+
 <h2>Search results</h2>
 </div>
 </div>
@@ -9,7 +21,9 @@
 
 <ol class="limeposts">
 
-
+<% if @posts.empty? %>
+  Sorry, no one is offering a lift here :(
+ <% else %>
 
  <% @posts.each do |post| %>
   <li>
@@ -34,6 +48,7 @@
   </div>
   </div>
   </li>
+ <% end %>
  <% end %>
  
 

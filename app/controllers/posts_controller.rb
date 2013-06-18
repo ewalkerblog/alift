@@ -7,7 +7,8 @@ class PostsController < ApplicationController
  
   
   def index
-    @posts = Post.all
+    @q = Post.search(params[:q])
+    @posts = @q.result(:distinct => true)
 
     respond_to do |format|
       format.html # index.html.erb
