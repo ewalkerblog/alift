@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 gem 'address_picker-rails', '0.3.0'
 gem 'jquery-ui-themes'
 
+gem 'activeadmin'
 gem 'sqlite3'
 gem 'xkimo'
 gem 'omniauth-facebook'
@@ -16,7 +17,7 @@ gem 'ransack'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem "meta_search",    '>= 1.1.0.pre'
 
 
   gem 'uglifier', '>= 1.0.3'

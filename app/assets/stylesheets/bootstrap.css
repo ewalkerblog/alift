@@ -989,7 +989,7 @@ table [class*=span], .row-fluid table [class*=span] {
 	background-color: #c4e3f3;
 }
 form {
-	margin: 0 0 20px;
+	margin-top: 7px;
 }
 fieldset {
 	padding: 0;

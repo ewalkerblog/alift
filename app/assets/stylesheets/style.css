@@ -108,7 +108,7 @@ outline:none;
 	font-size:12px;
 }
 .navbar .btn {
-	margin-top:7px;
+	margin-top:2px;
 }
 .navbar a, .navbar a:visited {
 	text-shadow:none !important;
@@ -771,15 +771,20 @@ color: #ffffff;
  /* Lists */
 
 .lists {
-	background:#ffff;
+	background:#fff;
 	color:#138cd6;
 	font-size: 17px;
 	font-weight: normal;
 	display: block;
 	font-family: 'Metrophobic', sans-serif;
-	width: 960px;
+	width: 940px;
+	margin-bottom: 15px;
 	margin-right: auto;
     margin-left: auto;
+    border: 1px solid #69769a;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   -moz-border-radius: 4px;
 }
 
 .limeposts {
@@ -794,13 +799,7 @@ color: #ffffff;
 }
 
 .limebox {
-  
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #dddddd;
-   -webkit-border-top-left-radius: 4px;
-   border-top-left-radius: 4px;
-   -moz-border-radius-topleft: 4px;
+  padding: 15px;
   overflow: hidden; 
 }
 
@@ -808,23 +807,25 @@ color: #ffffff;
   width: 200px;
   float: left;
   margin-left: 20px;
+  text-align: left;
 }
 
 .limecontent {
   width: 400px;
   float: left;
   margin-left: 0px;
+  text-align: left;
 }
 
 .limecost {
   width: 200px;
   float: right;
   margin-right: 20px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #7a8494;
   padding: 5px;
-  width: 75px;
-  height: 65px;
+  width: 150px;
+  height: 60px;
 }
 
 .field.shorter {

@@ -1,65 +1,123 @@
+<div class="homesearch">
+ <div class="container">
+  <% if @posts.empty? %>
+   <div class="applebox">
+    <div class="appleh2">
+ 	 Sorry, no one is offering a lift here :(
+    </div>
+	 <%= search_form_for @q do |f| %>
+	  <div class="field">
+  	   <%= f.text_field :from_cont, :class => 'address-picker-input'  %>
+  	  </div>
+  	   <%= f.submit "Please Search Again", class:"btn btn-warning" %>
+  			 
+<!-- ============================================================================ -->
+
+    <script type="text/javascript">
+
+        //AddressPickerRails.Pickers.applyOnReady({
+        //    'onLoad':function (railsPicker) {
+        //        console.debug("callback for a single pond with ID '%s'", railsPicker.getIdPrefix());
+        //    }
+        //});
+
+        AddressPickerRails.Pickers.apply({
+            'onLoad':function (railsPicker) {
+                console.debug("callback for a single post with ID '%s'", railsPicker.getIdPrefix());
+            }
+        });
+        
+        
+         
+    </script>
+
+    <!-- ============================================================================ -->
+
+   <% end %>
+  </div>
+ </div>
+</div>
+</div>
 
 
+              <% else %>
 
 <div class="homesearch">
-<div class="container">
-
-<h2>Type in any location to see what rides are available:</h2>
-<%= search_form_for @q do |f| %>
-  <div class="field">
-    <%= f.text_field :from_cont %>
-  </div>
-  <%= f.submit "Search", class:"btn btn-warning" %>
-<% end %>
-
-<h2>Search results</h2>
-</div>
-</div>
-
-<div class="lists">
-
-
-<ol class="limeposts">
-
-<% if @posts.empty? %>
-  Sorry, no one is offering a lift here :(
- <% else %>
-
- <% @posts.each do |post| %>
-  <li>
-  <div class="limeskin">
-  <div class="limebox">
-  <div class="limecost">
-  <p><%= number_to_currency(post.price, :unit => "R") %> </p> 
-  <p><%= post.seat %> </p> 
-  </div>
-  <div class="limeface">
-  <%=post.user.name%>
-  </div>
-  <div class="limecontent">
-    From:
-    <%= post.from %>
-    To:
-    <%= post.to %>
-    <p>Date:</p>
-    <p><%= post.date %></p>
-  </div>
-  
-  </div>
-  </div>
-  </li>
- <% end %>
- <% end %>
+ <div class="container">          
+  <h2>Search results</h2>
+   
+     <% @posts.each do |post| %>
+     <div class="lists">
+    <ol class="limeposts">
+      <li>
+       <div class="limeskin">
+        <div class="limebox">
+         <div class="limecost">
+          <b>Price:</b>
+          <%= number_to_currency(post.price, :unit => "R") %><br>
+          <b>Seats available:</b>
+          <%= post.seat %>
+          <b>Bagroom:</b>
+          <%= post.bagroom %>
+         </div>
+          <div class="limeface">
+           <b><%=post.user.name%></b>
+          </div>
+           <div class="limecontent">
+            <b>From:</b>
+            <%= post.from %> <br>
+            <b>To:</b>
+            <%= post.to %><br>
+           <b> Date:</b>
+            <%= post.date %>
+           </div>
+          </div>
+         </div>
+         </li>     
+          </ol>
+      </div> 
+        <% end %>
+      
  
+<div class="applebox">
+ <div class="appleh2">
+  Do another search.
+ </div>
+  <%= search_form_for @q do |f| %>
+   <div class="field">
+    <%= f.text_field :from_cont, :class => 'address-picker-input'  %>
+   </div>
+    <%= f.submit "Search Again", class:"btn btn-warning" %>
+  			 
+  			 <!-- ============================================================================ -->
 
+    <script type="text/javascript">
 
+        //AddressPickerRails.Pickers.applyOnReady({
+        //    'onLoad':function (railsPicker) {
+        //        console.debug("callback for a single pond with ID '%s'", railsPicker.getIdPrefix());
+        //    }
+        //});
 
+        AddressPickerRails.Pickers.apply({
+            'onLoad':function (railsPicker) {
+                console.debug("callback for a single post with ID '%s'", railsPicker.getIdPrefix());
+            }
+        });
+        
+        
+         
+    </script>
 
-</ol>
-
+    <!-- ============================================================================ -->
+ <% end %>
+ </div>
+ <% end %>	 
+ </div>
 </div>
-
-
+</div>
+</div>
+ 
 
 
 

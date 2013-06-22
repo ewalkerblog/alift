@@ -1,5 +1,7 @@
 Alift::Application.routes.draw do
   
+  
+
   resources :posts
    
   match 'auth/:provider/callback', to: 'sessions#create'
@@ -11,6 +13,9 @@ Alift::Application.routes.draw do
 
   root :to => 'pages#index'
   match '/newride', to: 'posts#new'
+  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 
 
 end
