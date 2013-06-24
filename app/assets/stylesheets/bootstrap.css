@@ -131,8 +131,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	color: #005580;
-	text-decoration: underline;
+	text-decoration: none;
 }
 .img-rounded {
 	-webkit-border-radius: 6px;
@@ -1026,7 +1025,7 @@ label {
 	padding-left: 290px;
 }
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-	padding-right: 140px;
+	padding-right: 30px;
 	padding-right: 4px \9;
 	padding-left: 14px;
 	padding-left: 4px \9;
@@ -1039,7 +1038,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	border-radius: 15px;
 }
 input, textarea, .uneditable-input {
-	width: 206px;
+	width: 300px;
 }
 textarea {
 	height: auto;

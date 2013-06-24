@@ -7,6 +7,7 @@ class PostsController < ApplicationController
  
   
   def index
+  
     @q = Post.search(params[:q])
     @posts = @q.result(:distinct => true)
 

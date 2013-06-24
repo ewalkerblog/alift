@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+attr_protected :provider, :uid, :name, :email
+attr_accessible :email
 
 has_many :posts, dependent: :destroy
 

@@ -23,7 +23,7 @@ overlay_gallery: false, social_tools: false
 
 jQuery(function($){
    $(".tweet").tweet({
-      username: "ashobiz",
+      username: "erinchampwalker",
       join_text: "auto",
       avatar_size: 0,
       count: 2,

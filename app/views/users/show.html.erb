@@ -1,0 +1,54 @@
+<div class="homesearch">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="padd">
+		 <div class="applebox2">
+		  <div class="appleh2">
+		  My Profile
+		  </div>
+           <b>Name:</b> <%= @user.name %> <br>
+		   <b>Email:</b> <%= @user.email if @user.email %> <br>
+		   <%= link_to 'Edit Your Email Address', edit_user_path %>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     
+     <h2><%= @user.name %>'s Posts</h2>
+   
+     <% @user.posts.each do |post| %>
+     <div class="lists">
+      <ol class="limeposts">
+       <li>
+        <div class="limeskin">
+         <div class="limebox">
+          <div class="limecost">
+          <b>Price:</b>
+          <%= number_to_currency(post.price, :unit => "R") %><br>
+          <b>Seats available:</b>
+          <%= post.seat %>
+          <b>Bagroom:</b>
+          <%= post.bagroom %>
+          </div>
+           <div class="limeface">
+           <b><%=post.user.name%></b>
+            <h3><%= link_to 'Show Post', post %></h3>
+           </div>
+            <div class="limecontent">
+            <b>From:</b>
+            <%= post.from %> <br>
+            <b>To:</b>
+            <%= post.to %><br>
+           <b> Date:</b>
+            <%= post.date %> <br>
+            
+            </div>
+           </div>
+          </div>
+         </li>     
+        </ol>
+      </div> 
+     <% end %>
+    </div>
+   </div>

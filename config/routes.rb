@@ -2,6 +2,8 @@ Alift::Application.routes.draw do
   
   
 
+  resources :users
+
   resources :posts
    
   match 'auth/:provider/callback', to: 'sessions#create'

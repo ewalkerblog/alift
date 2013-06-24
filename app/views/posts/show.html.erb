@@ -1,20 +1,47 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <b>From:</b>
-  <%= @post.from %>
-</p>
+<div class="homesearch">
+  <div class="container">
+  <h2 id="notice"><%= notice %></h2>
+   <h2><%=@post.user.name%></h2>
 
-<p>
-  <b>To:</b>
-  <%= @post.to %>
-</p>
+     <div class="lists">
+    <ol class="limeposts">
+      <li>
+       <div class="limeskin">
+       
+        <div class="limebox">
+         <div class="limecost">
+          <b>Price:</b>
+          <%= number_to_currency(@post.price, :unit => "R") %><br>
+          <b>Seats available:</b>
+          <%= @post.seat %>
+          <b>Bagroom:</b>
+          <%= @post.bagroom %>
+         </div>
+          <div class="limeface">
+           <b><%=@post.user.name%></b>
+          </div>
+           <div class="limecontent">
+            <b>From:</b>
+            <%= @post.from %> <br>
+            <b>To:</b>
+            <%= @post.to %><br>
+           <b> Date:</b>
+            <%= @post.date %>
+           </div>
+          </div>
+         </div>
+         </li>     
+        </ol>
+      </div>
+      <div class="applebox3">
+      <%= link_to 'Edit Post', edit_post_path(@post) %>  |  <%= link_to 'Back To Profile', @user %> 
+      | <%= link_to 'Delete Post', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+     </div>
+    </div>
+   </div>
 
-<p>
-  <b>Date:</b>
-  <%= @post.date.strftime("%b %d %Y") %>
-</p>
 
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+
+
